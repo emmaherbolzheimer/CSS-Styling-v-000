@@ -1,0 +1,68 @@
+/* CSS Syntax
+
+Selector {
+property:value;
+property:value;
+}
+
+
+Type selector
+
+p -- will select all p elemtents
+  */
+
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+
+  p {
+    font-size: 1em;  /* ems to pxs -- 1 em = 16 pixels */
+    line-height: 1.5em;
+  }
+
+  figcaption{
+    /*font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    font-family: Georgia, "New Times Roman", serif; */
+    font: normal 0.75em/1.5em 'Elsie Swash Caps', cursive;
+    color: #777;
+    text-align: right;
+  }
+
+/* Class Selectors ( applied to as many elements as needed) */
+
+.milk-text{ *select elements with a class="milk-text"
+  font: bold 2.6em 'Elsie Swash Caps', cursive;
+  color: white;
+  text-shadow: 0 2px 3px #000;
+}
+
+/*ID Selectors -- only applied to one unique element per page*/
+
+#logo{
+  background: aqua;
+}
+
+/* Descendent selector -- select descendents of a parent element/. Space to go inside element */
+
+#logo h1{
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+#logo h2{
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Pseudo -- select an element based on event states */
+#details a:link, a:visited {
+  color:black;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color:gray;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color:red;
+}
